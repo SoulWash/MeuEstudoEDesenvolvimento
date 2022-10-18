@@ -1,8 +1,16 @@
-# MeuEstudoHTML/CSS/JS
+<h1>#MeuEstudoHTML/CSS/JS<h1>
 
 [ESSA DOCUMENTAÇÃO É PARA O MEU DESENVOLVIMENTO PESSOAL]
 
- #PlanoDoMeuEstudo de HTML/CSS/JS
+
+<div style="display: inline_block"><br>
+  <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+</div>
+<br>
+
+ <h2>#PlanoDoMeuEstudo de HTML/CSS/JS<h2>
 - Esse será o meu repo de todas práticas dos estudos de HTML/CSS/JS.
 As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada termino do meu desenvolvimento.
 - Com adesão de pastas e arquivos separados, para ter sua diferenciação na documentação.
