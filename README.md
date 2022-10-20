@@ -26,9 +26,9 @@ As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada ter
 
 <strong>*Assistir ou Ouvir videos não vão entrar no TEMPO DO ESTUDO*</strong>
 <p>
-- 1 hora de estudo por dia de HTML/CSS com as práticas (Que vão ficar aqui sendo atualizadas) *É possível que vá estudar em dias separados* 
+- HTML/CSS com as práticas (Que vão ficar aqui sendo atualizadas) *É possível que vá estudar em dias separados* 
 
-- 1 hora de estudo por dia de JavaScript com as práticas (Que vão ficar aqui sendo atualizadas) <b>*Sobre o JS é possível que fiquem na mesma pasta os projetos simples de estudo*</b></p>
+- JavaScript com as práticas (Que vão ficar aqui sendo atualizadas) <b>*Sobre o JS é possível que fiquem na mesma pasta os projetos simples de estudo*</b></p>
 
 <p>
 #NÃO SERÁ INCLUIDA NENHUMA DIDATICA POR FORA NESSA DOCUMENTAÇÃO!!
