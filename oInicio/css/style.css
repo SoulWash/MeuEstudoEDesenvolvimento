@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.img-bg {
+    filter: opacity(20%);
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+img .html {
+    filter: brightness(200%) opacity(100%) saturate(100%);
+}
+
+ol a {
+    list-style-type: none;
+    text-decoration: none;
+}
