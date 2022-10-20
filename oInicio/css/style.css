@@ -7,16 +7,31 @@ body{
     text-align: center;
 }
 .img-bg {
-    filter: opacity(20%);
+    filter: opacity(10%) brightness(50%) saturate(20%);
     position: absolute;
     left: 0;
     z-index: -1;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
-img .html {
-    filter: brightness(200%) opacity(100%) saturate(100%);
+
+header {
+    padding-top: 50px;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    width:1450px;
 }
 
 ol a {
+    color: rgb(11, 26, 230);
     list-style-type: none;
     text-decoration: none;
+}
+
+li .proj-list {
+    color: rgb(13, 207, 55);
 }
