@@ -1,7 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
+@media (max-width: 1000px) {
+    body {
+        padding: 0px;
+        margin: 0;
+    }
 }
+
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
@@ -21,17 +24,20 @@ header {
 }
 
 footer {
-    bottom: 0;
-    position: absolute;
-    width:1450px;
+    margin-top: 350px;
+    padding-bottom: 0;
 }
 
-ol a {
+ol a{
     color: rgb(11, 26, 230);
-    list-style-type: none;
     text-decoration: none;
 }
 
-li .proj-list {
+li {
+    list-style-type: none;
+}
+
+.proj-list {
+    text-decoration: none;
     color: rgb(13, 207, 55);
 }
