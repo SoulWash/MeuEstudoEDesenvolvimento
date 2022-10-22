@@ -1,4 +1,4 @@
-<h1>#MeuEstudoHTML/CSS/JS</h1>
+<h1>#MeuEstudoHTML/CSS/JS &#x1F596 &#x1F913</h1>
 
 <p><em>[ESSA DOCUMENTAÇÃO É PARA O MEU DESENVOLVIMENTO PESSOAL]</em></p>
 
