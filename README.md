@@ -20,7 +20,7 @@ As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada ter
 <h2>#Plano de Estudo terá as seguintes condições:</h2>
 
 *Irá incluir leitura des documentações que forem necessários para as práticas*
-<p>#Bibliotecas:<cite>https://developer.mozilla.org/pt-BR/</cite>;<br>
+<p>#Bibliotecas:<a href"https://developer.mozilla.org/pt-BR/" target="_blank"> MDN</a>;<br>
 #Livros: "JavaScript O Guia Definitivo", David Flanagan;<br>
 #Usarei também o Discover da plataforma da RocketSeat / CursoEmVideo com o Professor Guanabara.</p>
 
