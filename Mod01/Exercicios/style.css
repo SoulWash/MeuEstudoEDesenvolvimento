@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    font-size: 15pt;
+}
+
+h1 {
+    color: brown;
+    background-color: goldenrod;
+    text-decoration: underline;
+}
+
+p {
+    color: brown;
+}

@@ -11,7 +11,13 @@
     <h1>Minhas redes sociais</h1>
     <p><a href="../Exercicios/ex010.html" target="_self" rel="prev">Voltar ao ex010</a></p>
     <h2>Quem sou eu?</h2>
-    <img src="../imgCursoEmV/perfilredondo150px.jpg" alt="Foto de Perfil Washington">
+    <picture>
+        <source media="(max-width: 400px)" srcset="./img/perfilredondo150px.png" type="image/png">
+        <source media="(max-width: 500px)" srcset="./img/perfilredondo280px.png" type="image/png">
+        <source media="(max-width: 600px)" srcset="./img/perfilredondo450px.png" type="image/png">
+        <source media="(max-width: 820px)" srcset="./img/perfilredondo550px.png" type="image/png">
+        <img src="./img/perfilredondo.png" alt="Foto de Perfil Washington">
+    </picture>
     <p>Olá Meu nome é <strong>Washington Luiz</strong>, seja bem-vindo(a)!<br>
     Atualmento trabalho como Atendente de Telemarketing. Minha irmã que me apresentou a programação. Desde então estou estudando <span>HTML, CSS, JavaScript</span>.
     Gosto muito de doces(até demais), e meus principais hobbies é assistir séries, animes e ouvir muita música, minha preferência é ROCK'N ROLL.</p>
@@ -24,5 +30,10 @@
         <li><a href="https://twitter.com/washkun" target="_blank" rel="external"><img src="../imgCursoEmV/icone-twitter.png" alt="Logo do Twitter">/washkun</a> - Me segue lá no Twitter</li>
         <li><a href="https://www.facebook.com/wash.kun/" target="_blank" rel="external"><img src="../imgCursoEmV/icone-facebook.png" alt="Logo do Facebook">/wash.kun</a> - Me acompanha lá no Facebook</li>
     </ul>
+    <audio autoplay>
+        <source src="../arquivosEmidia/tea-time-ofshane.mp3" type="audio/mpeg">
+        <source src="../arquivosEmidia/tea-time-ofshaneogg.ogg" type="audio/ogg">
+        <p>Erro ao reproduzir o audio.</p>
+    </audio>
 </body>
 </html>
