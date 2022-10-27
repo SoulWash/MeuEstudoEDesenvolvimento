@@ -1,15 +1,66 @@
 @charset "UTF-8";
-
-body {
-    font-size: 15pt;
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@font-face {
+    font-family: 'Batman';
+    src: url('./fonts/batmfa__.ttf') format('truetype');
 }
 
-h1 {
-    color: brown;
-    background-color: goldenrod;
-    text-decoration: underline;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Fredericka the Great', cursive;
+    padding: 20px;
+    background-color: #414925;
+    display: block;
+}
+
+.conteiner {
+    margin: 20px;
+    border:  5px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.voltar, dt{
+    font-family: 'Batman', Arial, Helvetica, sans-serif;
+}
+
+
+h1, h2, p{
+    color: rgb(19, 17, 17);
+    text-align: center;
 }
 
 p {
-    color: brown;
+    margin: 20px 0;
 }
+
+dt {
+    font-weight: bolder;
+}
+
+
+p, dd {
+    font-family: 'Fredericka the Great', cursive;
+    color: #566E3F;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+dl {
+    font-family: Arial;
+    margin-top: px;
+    color: brown;
+    text-align: justify;
+}
+a, li {
+    text-decoration: none;
+}
+
