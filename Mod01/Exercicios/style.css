@@ -8,7 +8,6 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -17,15 +16,14 @@ body {
     font-family: 'Fredericka the Great', cursive;
     padding: 20px;
     background-color: #414925;
-    display: block;
 }
 
 .conteiner {
-    margin: 20px;
-    border:  5px solid black;
+    margin: auto;
+    border:  20px solid #5E531E;
     border-radius: 20px;
-    padding: 20px;
-    background-color: white;
+    padding: 30px;
+    background-color: #e9e9e9;
 }
 
 .voltar, dt{
@@ -33,7 +31,11 @@ body {
 }
 
 
-h1, h2, p{
+h1 {
+    text-decoration: underline;
+}
+
+h1, h2, p, li{
     color: rgb(19, 17, 17);
     text-align: center;
 }
@@ -46,7 +48,6 @@ dt {
     font-weight: bolder;
 }
 
-
 p, dd {
     font-family: 'Fredericka the Great', cursive;
     color: #566E3F;
@@ -55,12 +56,37 @@ p, dd {
 }
 
 dl {
-    font-family: Arial;
-    margin-top: px;
+    margin-top: 30px;
     color: brown;
     text-align: justify;
 }
 a, li {
     text-decoration: none;
+    list-style: none;
+}
+a:visited {
+    color: #5E531E;
+}
+a:hover {
+    text-decoration: underline;
 }
 
+
+@media (max-width: 450) {
+
+    body {
+        padding: 10px;
+    }
+
+    .conteiner {
+        width: 0px;
+    }
+
+    h1, h2,h3,p, a, li, dl,dt ,dd{
+        font-size: 10px;
+    }
+    
+    dl {
+        margin-top: 15px;
+    }
+}

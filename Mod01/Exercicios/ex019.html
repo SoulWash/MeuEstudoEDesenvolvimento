@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="cursoemvideo02.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pseudos</title>
+
+    <style>
+        body {
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(0, 255, 13);
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .especial:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+        .especial::before {
+            content: '☛ ';
+            font-weight: lighter;
+        }
+        .especial::after {
+            content: ' ☚';
+            font-weight: lighter;
+        }
+
+        div#p-elemento > p {
+            display: none;
+        }
+        div#p-elemento:hover > p {
+            display: block;
+            background-color: yellow;
+        }
+        h2 {
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Personalizando um link</h1>
+        <p><a href="../Exercicios/ex000.html" target="_self" rel="prev" class="voltar">Voltar</a></p>
+        <p>
+            Para aprender HTML5 e CSS3, acesso o 
+            <a href="https://gustavoguanabara.github.io" rel="external">
+                GitHub do Guanabara
+            </a>
+        </p>
+        <p>
+            Se quiser conhecer mais sobre os padrões, visite o site do 
+            <a href="https://www.w3c.br" rel="external">Escritório do W3C no Brasil</a>
+        </p>
+        <p>
+            Para acompanhar os cursos, acesse o 
+            <a href="https://www.youtube.com/cursoemvideo/" class="especial" rel="external">canal do CursoemVideo</a>
+        </p>
+
+
+        <h1>Conteúdo especial</h1>
+        <div id="p-elemento">
+            <h2>Passe o mouse Aquil</h2>
+            <p>Surpresa!</p>
+        </div>
+        <p>Veja o conteúdo oculto aparecendo!</p>
+    </div>
+
+</body>
+</html>
