@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box-Model</title>
-
+    <title>Tags semânticas</title>
     <style>
-        h1 {
-            width: 350px;
-            height: 50px;
-            background-color: lightgrey;
-            border: 10px solid red;
-            padding: 20px;
-            outline: 30px solid blue;
-            margin: 50px;
+        body {
+            font: 1em Arial, Helvetica,sans-serif;
+            background-color: peachpuff;
         }
-
+        article#caixa {
+            background-color: snow;
+            width: 400px;
+            margin: auto;
+            padding: 1px 10px;
+            box-shadow: 3px 5px 4px black;
+        }
     </style>
 
 </head>
 <body>
-    <h1>Exemplo de Caixa</h1>
+    <header>
+        <h1>Título principal</h1>
+        <nav>likns...</nav>
+    </header>
+<main>
+    <section>
+        <article id="caixa">
+            <h2>Título</h2>
+            <p>Texto do artigo</p>
+        </article>
+        <article>
+            <h2>Título 2</h2>
+            <p>Texto do artigo 2</p>
+            <aside>Conteúdo periférico do artigo</aside>
+        </article>
+    </section>
+    <aside>Conteúdo periférico do site</aside>
+    <footer>
+        conteúdo do rodapé
+    </footer>
+</main>
 </body>
 </html>
