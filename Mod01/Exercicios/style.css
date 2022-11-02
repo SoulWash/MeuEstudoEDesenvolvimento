@@ -15,11 +15,13 @@
 body {
     font-family: 'Fredericka the Great', cursive;
     padding: 20px;
-    background-color: #414925;
+    background: url('./ex021/imagens/wallpaper001.jpg') no-repeat center/cover;
 }
 
 .conteiner {
     margin: auto;
+    max-width: 1400px;
+    min-height: 1000px;
     border:  20px solid #5E531E;
     border-radius: 20px;
     padding: 30px;
@@ -46,26 +48,30 @@ p {
 
 dt {
     font-weight: bolder;
+
 }
 
 p, dd {
     font-family: 'Fredericka the Great', cursive;
     color: #566E3F;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 dl {
-    margin-top: 30px;
-    color: brown;
-    text-align: justify;
+    margin-top: 50px;
+    color: #5fc401;
+    text-align: left;
+    columns: 2;
+    line-height: 2em;
+    justify-content: space-between;
 }
 a, li {
     text-decoration: none;
     list-style: none;
 }
 a:visited {
-    color: #5E531E;
+    color: #998937;
 }
 a:hover {
     text-decoration: underline;
