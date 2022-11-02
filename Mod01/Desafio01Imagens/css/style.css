@@ -110,7 +110,7 @@ img {
 
 @media (max-width: 450px) {
 
-    h1,h2, a, p, li{
+    h1,h2, a, p{
         font-size: 0.7em;
         padding: 2px;
     }
@@ -118,6 +118,11 @@ img {
         padding: 3px;
         margin: 18px auto;
         width: 250px;
+        font-size: 0.8em;
+    }
+
+    .desafios-lista li:hover{
+        width: 200px;
     }
 
     div .home {
