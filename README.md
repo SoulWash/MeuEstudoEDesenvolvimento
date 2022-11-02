@@ -21,7 +21,7 @@ As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada ter
 *Irá incluir leitura des documentações que forem necessários para as práticas*
 <p>#Bibliotecas: <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN</a>;<br>
 #Usarei também o Discover da plataforma da RocketSeat / CursoEmVideo com o Professor Guanabara.</p>
-<p>
+<>
 - HTML/CSS com as práticas (Que vão ficar aqui sendo atualizadas) *É possível que vá estudar em dias separados* 
 <p>
 #NÃO SERÁ INCLUIDA NENHUMA DIDATICA POR FORA NESSA DOCUMENTAÇÃO!!
@@ -32,8 +32,8 @@ As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada ter
 </pre>
 </p>
 
-<h2>Acesso:</h2> 
-<p><a href="./Mod01/Desafio01Imagens/d000.html">Menu dos Desafios</a></p>
+<h2>Acesso das atividades:</h2> 
+<a href="https://soulwash.github.io/MeuEstudoEDesenvolvimento/Mod01/Desafio01Imagens/d000.html">Menu dos Desafios</a>
 <p>Menu dos Exercícios</p>
 
 
