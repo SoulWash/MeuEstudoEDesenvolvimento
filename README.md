@@ -1,4 +1,4 @@
-<h1>#MeuEstudoHTML/CSS &#x1F596 &#x1F913</h1>
+<h1>#MeuEstudoHTML/CSS</h1>&#x1F596 &#x1F913
 
 <p><mark>[ESSA DOCUMENTAÇÃO É PARA O MEU DESENVOLVIMENTO PESSOAL]</mark><p>
 
@@ -33,8 +33,8 @@ As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada ter
 </p>
 
 <h2>Acesso das atividades:</h2> 
-<a href="https://soulwash.github.io/MeuEstudoEDesenvolvimento/Mod01/Desafio01Imagens/d000.html">Menu dos Desafios</a>
-<p>Menu dos Exercícios</p>
+<p><a href="https://soulwash.github.io/MeuEstudoEDesenvolvimento/Mod01/Desafio01Imagens/d000.html" target="_blank" rel="next">Menu dos Desafios</a></p>
+<p><a href="https://soulwash.github.io/MeuEstudoEDesenvolvimento/Mod01/Exercicios/ex000.html" target="_blank" rel="next">Menu dos Exercícios</a></p>
 
 
 <p><mark>[ESSA DOCUMENTAÇÃO É PARA O MEU DESENVOLVIMENTO PESSOAL]</mark><p>
