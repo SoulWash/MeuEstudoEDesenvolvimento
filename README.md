@@ -32,4 +32,9 @@ As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada ter
 </pre>
 </p>
 
+<h2>Acesso:</h2> 
+<p><a href="./Mod01/Desafio01Imagens/d000.html">Menu dos Desafios</a></p>
+<p>Menu dos Exercícios</p>
+
+
 <p><mark>[ESSA DOCUMENTAÇÃO É PARA O MEU DESENVOLVIMENTO PESSOAL]</mark><p>
