@@ -5,30 +5,48 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+:root {
+    --color-black: black;
+    --color-white: white;
+    --color-blue: #2222FF;
+    --color-skyBlue:#00E5FC;
+    --color-whiteBlue:#D7F8F9;
+    --fonte-titulo-principal: 'Asap',sans-serif;
+    --fonte-paragrafo: 'Monospace', sans-serif;
+}
+
+
+html,
 body {
-    font-family: 'Asap',sans-serif;
-    color: #ffffff;
-    background-color: #D7F8F9;
+    height: 100vh;
+    background-color: var(--color-black);
+    font-family: var(--fonte-titulo-principal);
     text-align: center;
     margin-top: 20px;
 }
+
+
+
 h1 {
     margin-top: 10px;
-    color: #00E5FC;
+    color: var(--color-skyBlue);
     text-transform: uppercase;
+    font-size: 4vw;
 }
 
 p, h2 {
     margin: 20px 0;
     font-family: 'Monospace', sans-serif;
     padding: 0px 40px;
+    color: var(--color-white);
 }
 
 .conteiner{
-    background-color: #202020;
-    padding: auto;
-    border: 5px double #FCFCFC;
-    border-radius: 3rem;
+    background-color: var(--color-black);
+    border: 5px solid var(--color-skyBlue);
+    border-radius: 3em;
+    margin: auto;
 }
 
 li {
@@ -57,33 +75,6 @@ div .home {
     border: 2px solid #FCFCFC;
 }
 
-.desafios-lista li{
-    font-size: 1.5em;
-    font-weight: bold; 
-    opacity: 80%;
-    padding: 5px;
-    transition: 0.5s;
-    margin: 18px auto;
-    list-style: none;
-    width: 500px;
-    background-color: #2222FF;
-    box-shadow: 2px 0px 12px 3px black inset;
-
-}
-
-.desafios-lista li:hover {
-    box-shadow: 8px 0px 12px 1px #00E5FC,
-    8px 0px 12px 1px #00E5FC;
-    border-radius: 30px;
-    width: 400px;
-    opacity: 80%;
-    background-color: #141414;
-}
-
-
-.desafios-lista li > a{
-    color: #00E5FC;
-}
 
 
 
