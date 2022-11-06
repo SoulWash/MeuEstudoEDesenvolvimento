@@ -33,8 +33,7 @@ As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada ter
 </p>
 
 <h2>Acesso das atividades:</h2> 
-<p><a href="https://soulwash.github.io/MeuEstudoEDesenvolvimento/Mod01/Desafio01Imagens/d000.html" target="_blank" rel="next">Menu dos Desafios</a></p>
-<p><a href="https://soulwash.github.io/MeuEstudoEDesenvolvimento/Mod01/Exercicios/ex000.html" target="_blank" rel="next">Menu dos Exercícios</a></p>
+<p><a href="https://soulwash.github.io/MeuEstudoEDesenvolvimento/HTML-CSS/Home.html" target="_blank" rel="next">Menu Principal</a></p>
 
 
 <p><mark>[ESSA DOCUMENTAÇÃO É PARA O MEU DESENVOLVIMENTO PESSOAL]</mark><p>
