@@ -70,12 +70,14 @@ picture img {
 
 
 section {
-    background: url('/CursoEmVideoHTML-CSS/imagens/homer-rock.jpg') no-repeat bottom/cover fixed;
+    background: url('../imagens/homer-rock.jpg') no-repeat right/cover fixed;
     padding: 8vh 0 8vh 30px;
+    box-shadow: inset 2px 0 10px 2px var(--color-black);
+    border-radius: 20px;
 }
 section > p {
     color: var(--color-black);
-    background-color: #00000054;
+    background-color: #0000002c;
     padding-bottom: 10px;
     display: inline-block;
     line-height: 2em;
