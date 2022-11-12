@@ -58,6 +58,9 @@ h2 {
     margin-top: 20px;
     font-size: 4vh;
     text-align: center;
+    background-color: var(--color-bordas);
+    border-radius: 20px;
+    padding: 20px;
 }
 
 picture img {
@@ -122,11 +125,12 @@ aside {
 }
 
 aside ul {
+    margin-top: 20px;
     columns: 2;
 }
 
 h3 {
-    padding: 5px;
+    padding: 10px;
     font-size: 3vh;
     background-color: var(--color-bordas);
     border-radius: 20px 20px 0px 0px;
