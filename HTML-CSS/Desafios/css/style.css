@@ -23,7 +23,7 @@ body {
     background-color: var(--color-black);
     font-family: var(--fonte-titulo-principal);
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
 }
 
 
@@ -65,8 +65,8 @@ div .home {
   padding: 5px;
   transition: 0.5s;
   position: absolute;
-  left: 50px;
-  top: 2rem;
+  left: 70px;
+  top: 50px;
   margin: auto;
 }
 .home:hover {
@@ -85,9 +85,19 @@ div .home {
 }
 
 img {
-    border: 2px solid black;
+    border: 1px solid black;
     box-shadow:rgb(0, 0, 0) 0px 4px 7px 2px;
 }
+
+#img-paisagem {
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.tagsHtml {
+    color: var(--color-white);
+}
+
 
 
 @media (max-width: 700px) {
@@ -102,7 +112,7 @@ img {
 @media (max-width: 450px) {
 
     h1,h2, a, p{
-        font-size: 0.7em;
+        font-size: 0.7vh;
         padding: 2px;
     }
     .desafios-lista li{
