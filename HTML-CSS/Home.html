@@ -1,32 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./estilos/home.css">
-    <link rel="stylesheet" href="./estilos/padrao.css">
-    <link rel="shortcut icon" href="/hellboy16px.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos/home.css" />
+    <link rel="stylesheet" href="./estilos/padrao.css" />
+    <link rel="shortcut icon" href="/hellboy16px.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
 
     <title>Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Menu Principal</h1>
+      <h1>Projeto HTLM e CSS</h1>
+      <nav>
+        <a href="#home" rel="next" class="home"><i class="bi bi-house-door-fill"></i></a>
+        <a href="#exercise" rel="next" class="exercise"><i class="bi bi-pencil-fill"></i></a>
+        <a href="#" rel="next" class="challenge"><i class="bi bi-cup-hot-fill"></i></a>
+        <a href="#about-me" rel="next" class="about"><i class="bi bi-file-earmark-person-fill"></i></a>
+      </nav>
     </header>
-    <section>
-        <nav>
-            <ul>
-                <li><a href="./Home.html"><img src="./imagens/home.jpeg" alt="Página inicial" title="Home"></a></li>
-                <li><a href="./minhasRedes.html" rel="prev"><img src="./imagens/redes-sociais-mais-usadas.jpeg" alt="Página de Redes" title="Minhas Redes"></a></li>
-                <li><a href="./Exercicios/ex000.html"><img src="./imagens/texto-do-exercício.jpeg" alt="Página de Exercícios" title="Exercícios"></a></li>
-                <li><a href="./Desafios/d000.html"><img src="./imagens/desafios.jpeg" alt="Página de Desafios" title="Desafios"></a></li>
-            </ul>
-        </nav>
-    </section>
+
+    <main>
+      <section id="home">
+        <h2>HTML e CSS com o Curso em Video</h2>
+        <p>Aprendendo HTML e CSS com o <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo/playlists" target="_blank" rel="external">CursoEmVideo</a><br> com o Professor <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">Gustavo Guanabara</a>.<br> Nesse curso que possui 5 modulos no total.<br> Mais de 25 capitulos assistidos e com matériais de apoio <br>disponibilizados no repositório do <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external"><abbr title="Site para acessar o repositório">Gustavo Guanabara</abbr></a>. </p>
+        <figure>
+          <img src="../HTML-CSS/imagens/cev-landscape.jpg" alt="Gustavo Guanabara">
+        </figure>
+      </section>
+      <section id="exercise">
+        <h2>Exercícios</h2>
+        <section>
+          <p>Aqui estão os exercícios propostos<br> durante os modulos do curso assistido.</p>
+        <ul class="exercise">
+          <li><a href="./Exercicios/ex007ex008.html" rel="next" target="_blank">&#x1F517 Formatação de Textos</a></li>
+          <li><a href="./Exercicios/ex009.html" rel="next" target="_blank">&#x1F517 Listas</a></li>
+          <li><a href="./Exercicios/ex010.html" rel="next" target="_blank">&#x1F517 Trabalhando com Links</a></li>
+          <li><a href="./Exercicios/ex011.html" rel="next" target="_blank">&#x1F517 Imagem dinâmica e áudio</a></li>
+          <li><a href="./Exercicios/ex012.html" rel="next" target="_blank">&#x1F517 Vídeos em HTML5</a></li>
+          <li><a href="./Exercicios/ex013-14-15.html" rel="next" target="_blank">&#x1F517 CSS Style</a></li>
+          <li><a href="./Exercicios/ex0016.html" rel="next" target="_blank">&#x1F517 Cores em CSS</a></li>
+          <li><a href="./Exercicios/ex017.html" rel="next" target="_blank">&#x1F517 Alinhamentos com CSS</a></li>
+          <li><a href="./Exercicios/ex018.html" rel="next" target="_blank">&#x1F517 Fontes em CSS</a></li>
+          <li><a href="./Exercicios/ex019.html" rel="next" target="_blank">&#x1F517 Pseudos</a></li>
+          <li><a href="./Exercicios/ex020.html" rel="next" target="_blank">&#x1F517 Tags semânticas e Box-Model no CSS</a></li>
+          <li><a href="./Exercicios/ex021/fundo01.html" rel="next" target="_blank">&#x1F517 Posicionamentos de Imagens</a></li>
+        </ul>
+      </section>
+      </section>
+      <section id="about-me">
+        <h2>Sobre mim</h2>
+        <p>Meu nome é <a href="https://github.com/SoulWash" target="_blank" rel="external">Washington Luiz</a>, tenho 27 anos. Entrei na área de tecnologia faz menos de 5 meses. Sempre gostei de jogar, muito(rsrs). Terminei o ensino médio desde 2013, nunca tive interesse nessa área. Então só continuei sem muitas expectativas de uma profissão. Entrei no emprego de call center estou a 7 anos, e me via entrando no poço sem fundo. Mas graças a minha irmá <a href="https://github.com/kellykilmadesousa" target="_blank" rel="external">Kelly Kilma</a> consegui ver o quanto poderia gostar disso aqui.</p>
+        <picture>
+          <source media="(max-width: 635px)" srcset="../HTML-CSS/imagens/wash-p.png" type="image/png">
+          <img src="../HTML-CSS/imagens/wash-m.png" alt="Washington Luiz">
+        </picture>
+        <p>Ao começar a ver todos esses curso e linguagens parece até outro mundo. Na verdade, concerteza é outro mundo. Não achava que era tão grande assim. E agora que estou consumindo muita coisa sobre a área de tecnologia. Tanto em redes sociais, youtube, participando de comunidades e eventos. Comecei aperceber que muitos dos colegas do call center também estão na área e eu não tinha notado dessa de imensa rede de pessoas muito feras.</p>
+        <aside>
+          <h3>Minhas redes</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/soulwashinho/" target="_blank" rel="external"><i class="bi bi-instagram"> Instagram</i></a></li>
+            <li><a href="https://github.com/SoulWash" target="_blank" rel="external"><i class="bi bi-github"> GitHub</i></a></li>
+            <li><a href="https://www.linkedin.com/in/washington-luiz-61597324b/" target="_blank" rel="external"><i class="bi bi-linkedin"> Linkedin</i></a></li>
+            <li><a href="https://twitter.com/washkun" target="_blank" rel="external"><i class="bi bi-twitter"> Twitter</i></a></li>
+            <li><a href="https://www.twitch.tv/soulescuro" target="_blank" rel="external"><i class="bi bi-twitch"> Twitch</i></a></li>
+            <li><a href="https://www.facebook.com/wash.kun/" target="_blank" rel="external"><i class="bi bi-facebook"> Facebook</i></a></li>
+          </ul>
+        </aside>
+      </section>
+    </main>
     <footer>
-        <p>Site criado por <a href="https://github.com/SoulWash" target="_blank" rel="external">Washington Luiz</a></p>
+      <p>
+        Site criado por
+        <a href="https://github.com/SoulWash" target="_blank" rel="external"
+          >Washington Luiz</a
+        >
+      </p>
     </footer>
-</body>
+    <audio autoplay loop>
+      <source src="./arquivosEmidia/tea-time-ofshane.mp3" type="audio/mpeg">
+      <source src="./arquivosEmidia/tea-time-ofshaneogg.ogg" type="audio/ogg">
+      <p>Erro ao reproduzir o audio.</p>
+  </audio>
+  </body>
 </html>
