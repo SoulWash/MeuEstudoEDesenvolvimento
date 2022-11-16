@@ -30,41 +30,38 @@ html, body {
     margin: auto;
 }
 
-
 header {
     background: url('../imagens/business.jpg') no-repeat bottom right/cover fixed;
     min-height: 400px;
+    border-bottom: 2px solid var(--color-black);
+    flex-wrap: wrap;
+    display: block;
 }
 
 header h1 {
     font-family: var(--fonte-titulos);
     color: var(--color-white);
-    padding: 40px;
-    font-size: 5vw;
+    padding: 70px;
+    font-size: 10vh;
     font-variant: small-caps;
-    position: absolute;
-    top: 30px;
-    left: 70px;
+    position: relative;
 }
 
-
 nav {
-    position: absolute;
+    position: relative;
     display: inline-block;
     margin: auto;
     width: fit-content;
-    margin: 30px;
-    top: 300px;
+    margin: 130px 30px 0 30px;
 }
 
 nav i {
-    font-size: 2vw;
+    font-size: 1.5em;
     padding: 10px;
     border: 2px solid;
     opacity: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
 }
-
 
 nav i:hover {
     border: 2px solid;
@@ -89,17 +86,13 @@ nav i:hover {
     color: skyblue;
 }
 
-
 nav a {
-    margin: 0 40px;
+    margin: 10px 40px;
     display: inline-flex;
     background-color: #000000bd;
 }
 
-
 main {
-    border: 2px solid var(--color-black);
-    box-shadow: 0px 0px 8px 2px var(--color-black) inset; 
     background-color: #ffffff;
     border-radius: 10px;
     padding: 30px;
@@ -116,21 +109,33 @@ main p{
     text-indent: 30px;
     line-height: 2rem;
     text-align: justify;
-    text-shadow: 1px 1px var(--color-black);
+    text-shadow: 1px 0 var(--color-black);
     padding: 20px;
 }
 
-#home img {
-    width: 450px;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-5%, 5%);
-    border: 2px solid var(--color-black);
-    box-shadow: 10px 10px 5px var(--color-black);
-    border-radius: 10px;
+.home-conteudo {
+    display: flex;
+    gap: 3em;
+    flex-wrap: wrap;
 }
 
+.home-conteudo p {
+    margin: 20px;
+    text-align: right;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.home-conteudo img {
+    width: 550px;
+    border: 2px solid var(--color-black);
+    box-shadow: 6px 4px 5px var(--color-black);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+}
 
 main a {
     text-decoration: none;
@@ -140,14 +145,18 @@ main a {
     padding: 3px;
     margin: 2px;
 }
-a:hover {
-    text-decoration: underline yellow;
-}
 
+a:hover {
+    text-decoration: underline var(--color-background);
+    cursor: pointer;
+}
 
 section#exercise section {
     background: url('../imagens/exercise.jpg') no-repeat center/cover fixed;
     color: var(--color-white);
+    margin: 0 25px;
+    border: 2px solid var(--color-black);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
 }
 
 main section#exercise p {
@@ -156,12 +165,10 @@ main section#exercise p {
     padding: 20px;
 }
 
-
 main li {
     list-style: none;
     margin: 5px;
 }
-
 
 main ul.exercise {
     background-color: rgba(0, 0, 0, 0.363);
@@ -173,14 +180,11 @@ main ul.exercise li a {
     color: var(--color-white);
 }
 
-
-
 picture {
     display: block;
     text-align: center;
     margin: 20px;
 }
-
 
 picture img {
     border: 2px solid rgba(0, 0, 0, 0.384);
@@ -188,7 +192,6 @@ picture img {
     2px 2px 5px rgba(0, 0, 0, 0.507);
     border-radius: 20px;
 }
-
 
 aside {
     background-color: var(--color-background);
@@ -204,14 +207,13 @@ aside h3 {
     background: var(--color-gradient);
     color: var(--color-black);
 }
+
 aside ul {
     padding: 15px;
     columns: 2;
     list-style: none;
     text-align: left;
 }
-
-
 
 footer {
     background-color: black;
@@ -227,9 +229,11 @@ footer a {
     font-weight: bold;
     font-family: var(--fonte-paragrafos);
 }
+
 footer a:visited {
     color: white;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
