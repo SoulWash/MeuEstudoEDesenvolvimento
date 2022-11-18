@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../cursoemvideo02.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulários</title>
+    <style>
+        fieldset {
+            width: 500px;
+            margin: auto;
+        }
+        form {
+            margin: auto;
+        }
+        label {
+            margin-right: 10px;
+        }
+        input {
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Meu Formulário</h1>
+        <fieldset>
+            <legend>Cadastro</legend>
+        <form action="cadastro" autocomplete="off" method="post">
+            <p><label for="name">Nome : </label><input type="text" name="name" id="name" placeholder="First Name"></p>
+            <p><label for="sobre-nome">Sobrenome : </label><input type="text" name="sobre-nome" id="sobre-nome" placeholder="Last Name"></p>
+            <p><label for="senha">Senha : </label><input type="password" name="senha" id="senha" placeholder="6-8 characters" maxlength="8" minlength="6"></p>
+            <p><input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"></p>
+        </form>
+        </fieldset>
+    </div>
+</body>
+</html>
