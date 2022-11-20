@@ -1,41 +1,245 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../cursoemvideo02.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../cursoemvideo02.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Formulários</title>
     <style>
-        fieldset {
-            width: 500px;
-            margin: auto;
-        }
-        form {
-            margin: auto;
-        }
-        label {
-            margin-right: 10px;
-        }
-        input {
-            margin: 2px;
-        }
+      form {
+        width: 500px;
+        margin: auto;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="conteiner">
-        <h1>Meu Formulário</h1>
+      <h1>Meus Formulários</h1>
+      <form action="cadastro" autocomplete="off" method="post">
         <fieldset>
-            <legend>Cadastro</legend>
-        <form action="cadastro" autocomplete="off" method="post">
-            <p><label for="name">Nome : </label><input type="text" name="name" id="name" placeholder="First Name"></p>
-            <p><label for="sobre-nome">Sobrenome : </label><input type="text" name="sobre-nome" id="sobre-nome" placeholder="Last Name"></p>
-            <p><label for="senha">Senha : </label><input type="password" name="senha" id="senha" placeholder="6-8 characters" maxlength="8" minlength="6"></p>
-            <p><input type="submit" value="Enviar">
-            <input type="reset" value="Limpar"></p>
-        </form>
+          <legend>Cadastro</legend>
+          <p>
+            <label for="name">Nome : </label
+            ><input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="First Name"
+              minlength="3"
+              maxlength="15"
+              required
+              size="25"
+              autocomplete="username"
+            />
+          </p>
+          <p>
+            <label for="sobre-nome">Sobrenome : </label
+            ><input
+              type="text"
+              name="sobre-nome"
+              id="sobre-nome"
+              placeholder="Last Name"
+              minlength="3"
+              maxlength="15"
+              required
+              size="25"
+              autocomplete="username"
+            />
+          </p>
+            <legend>Sexo :</legend>
+            <input type="radio" name="sexo" id="sex-masc" checked><label for="sex-masc"> Masculino</label><br>
+            <input type="radio" name="sexo" id="sex-fem"><label for="sex-fem"> Feminino</label>
+          <p>
+            <label for="phone">Telefone : </label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              autocomplete="tel"
+              pattern="^\(\[0-9]\d{2}\)\d{4,5}-\d{4,5}$"
+              placeholder="(xx)xxxx-xxxx"
+            />
+          </p>
+          <p>
+            <label for="email">E-mail : </label
+            ><input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              required
+              placeholder="seuemail@mail.com"
+            />
+          </p>
+          <p>
+            <label for="senha">Senha : </label
+            ><input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="6-8 characters"
+              maxlength="8"
+              minlength="6"
+              required
+              autocomplete="current-password"
+            />
+          </p>
         </fieldset>
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar" />
+        </p>
+      </form>
+      <form action="mediaAluno" autocomplete="on" method="get">
+        <fieldset>
+          <legend>Média do Aluno</legend>
+          <p>
+            <label for="nota1">Primeira Nota : </label>
+            <input type="number" name="nota1" id="nota1" min="0" max="10" step="0.1" required oninput="imedia.innerHTML = (Number(nota1.value) + Number(nota2.value))/2">
+          </p>
+          <p>
+            <label for="nota2">Segunda Nota : </label>
+            <input type="number" name="nota2" id="nota2" min="0" max="10" step="0.1" required oninput="imedia.innerHTML = (Number(nota1.value) + Number(nota2.value))/2">
+          </p>
+
+          <p>
+            <label for="media">Média : </label>
+            <output  id="imedia">0</output>
+          </p>
+          <p>
+            <label for="mes">Período Letivo : </label
+            ><input type="month" name="mes" id="mes" value="2022-06" />
+          </p>
+        </fieldset>
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar" />
+        </p>
+      </form>
+      <form action="favoritos" method="get" autocomplete="on">
+        <fieldset>
+          <legend>Esportes Favoritos:</legend>
+          <input type="checkbox" name="basquete" id="basquete" checked /><label
+            for="basquete"
+          >
+            Basquete</label
+          ><br />
+          <input type="checkbox" name="futebol" id="futebol" /><label
+            for="futebol"
+          >
+            Futebol</label
+          >
+          <br />
+          <input type="checkbox" name="natacao" id="natacao" /><label
+            for="natacao"
+          >
+            Natação</label
+          ><br />
+          <input type="checkbox" name="tenis" id="tenis" /><label for="tenis">
+            Tênis</label
+          >
+          <br />
+        </fieldset>
+        <p>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpar" />
+        </p>
+      </form>
+
+      <form action="custom" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Customização</legend>
+            <p>
+              <label for="cor">Escolha uma cor : </label><input type="color" name="cor" id="cor">
+            </p>
+            <p>
+              <label for="inum">Nivel de Satisfação : </label><input type="range" name="num" id="inum" min="1" max="10" value="1" oninput="nivel.innerHTML = Number(inum.value)">
+              <output  id="nivel">0</output>
+            </p>
+            <p>
+              <label for="arquivo">Escolha as imagens : </label>
+              <input type="file" name="arquivo" id="arquivo" multiple>
+            </p>
+        </fieldset>
+          <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+          </p>
+      </form>
+      <form action="address" method="POST" autocomplete="on"> 
+        <fieldset>
+          <legend>Endereço</legend>
+        <p>
+          <label for="estado">Estado : </label>
+          <select name="estado" id="estado">
+            <option value="" selected>------- Escolha -------</option>
+            <optgroup label="Região Sudeste">
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RS">Rio Grande do Sul</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+            <option value="PE">Pernambuco</option>
+            <option value="BH">Bahia</option>
+            <option value="MA">Maranhão</option>
+          </optgroup>
+          </select>
+        </p>
+
+        <p>
+          <label for="profissao">Profissão : </label>
+          <input type="text" name="profissao" id="profissao" list="d-profissao">
+          <datalist id="d-profissao">
+            <option value="ADM">Administador</option>
+            <option value="ENG">Engenheiro</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PROF">Professor</option>
+          </datalist>
+        </p>
+
+        <p>
+          <label for="mensg">Mensagem : </label><br>
+          <textarea name="mensg" id="mensg" cols="30" rows="10" placeholder="Deixe um comentário..."></textarea>
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </p>
+      </form>
+
+      <form action="nascimento" method="GET" autocomplete="off">
+        <fieldset>
+          <legend>Ano de Nascimento</legend>
+          <p>
+            <label for="year">Data de Nascimento : </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2012" oninput="calcIdade()">
+          </p>
+          <p>
+            <label for="iidade">Sua idade é : </label>
+            <output id="iidade">0</output>
+          </p>
+        </fieldset>
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </p>
+      </form>
     </div>
-</body>
+
+    <script>
+      function calcIdade() {
+        let atual = new Date().getFullYear()
+        iidade.innerHTML = Number(atual) - Number(iano.value)
+      }
+    </script>
+  </body>
 </html>

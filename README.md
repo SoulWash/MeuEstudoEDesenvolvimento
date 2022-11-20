@@ -1,6 +1,5 @@
 <h1>#MeuEstudoHTML/CSS &#x1F596 &#x1F913</h1>
 
-<p><mark>[ESSA DOCUMENTAÇÃO É PARA O MEU DESENVOLVIMENTO PESSOAL]</mark><p>
 
 ## 🛠 Habilidades Utilizadas
 <div style="display: inline_block"><br>
@@ -34,6 +33,3 @@ As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada ter
 
 <h2>Acesso das atividades:</h2> 
 <p><a href="https://soulwash.github.io/MeuEstudoEDesenvolvimento/HTML-CSS/Home.html" target="_blank" rel="next">Menu Principal</a></p>
-
-
-<p><mark>[ESSA DOCUMENTAÇÃO É PARA O MEU DESENVOLVIMENTO PESSOAL]</mark><p>

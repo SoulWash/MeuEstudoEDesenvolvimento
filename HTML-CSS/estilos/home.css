@@ -89,7 +89,7 @@ nav i:hover {
 nav a {
     margin: 10px 40px;
     display: inline-flex;
-    background-color: #000000bd;
+    background-color: hsla(0, 0%, 0%, 0.741);
 }
 
 main {
@@ -153,71 +153,81 @@ a:hover {
 
 section#exercise section {
     background: url('../imagens/exercise.jpg') no-repeat center/cover fixed;
-    color: var(--color-white);
-    margin: 0 25px;
-    border: 2px solid var(--color-black);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
-}
-
-main section#exercise p {
-    background-color: rgba(0, 0, 0, 0.527);
-    width: 440px;
-    padding: 20px;
+    display: flex;
+    justify-content: left;
 }
 
 main li {
     list-style: none;
-    margin: 5px;
+    margin: 10px;
 }
 
-main ul.exercise {
+.exercicios {
     background-color: rgba(0, 0, 0, 0.363);
     width: 440px;
     padding: 10px;
 }
 
-main ul.exercise li a {
+main ul.exercicios li a,
+ul.desafios li a {
     color: var(--color-white);
 }
 
-picture {
-    display: block;
-    text-align: center;
-    margin: 20px;
+section#challenge section {
+    background: url(../imagens/challenge.jpg) no-repeat center/cover fixed;
+    display: flex;
+    justify-content: right;
 }
 
-picture img {
+section#exercise section,
+section#challenge section {
+    padding: 50px;
+    margin: 0 25px;
+    border: 2px solid var(--color-black);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
+}
+
+
+.desafios {
+    background-color: rgba(0, 0, 0, 0.493);
+    width: 300px;
+    padding: 20px;
+}
+
+
+section#about-me section{
+    margin: auto;
+    flex-wrap: wrap;
+    display: block;
+    text-align: center;
+}
+
+
+img {
     border: 2px solid rgba(0, 0, 0, 0.384);
     box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.486) inset,
     2px 2px 5px rgba(0, 0, 0, 0.507);
     border-radius: 20px;
+    margin: 20px;
 }
 
 aside {
-    background-color: var(--color-background);
-    border-radius: 20px 20px 0 0;
     margin: 20px;
-    box-shadow: 1px 2px 8px var(--color-black),
-    2px 3px 6px 2px var(--color-black) inset;
 }
 
-aside h3 {
-    border-radius: 20px;
-    padding: 10px;
-    background: var(--color-gradient);
-    color: var(--color-black);
+aside li {
+    display: inline;
+    margin: 20px;
 }
 
-aside ul {
-    padding: 15px;
-    columns: 2;
-    list-style: none;
-    text-align: left;
+section i {
+    font-size:1.5rem;
+    color: var(--color-background);
 }
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: var(--color-black);
+    color: var(--color-white);
     text-align: center;
     margin-top: 11vh;
     padding: 10px;
@@ -231,9 +241,27 @@ footer a {
 }
 
 footer a:visited {
-    color: white;
+    color: var(--color-white);
 }
 
 footer a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+
+    nav a {
+        margin: 10px;
+    }
+    nav i {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-items: center;
+    }    
+    img {
+        width: 300px;
+        height: 210px;
+    }
+}
+    
