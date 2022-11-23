@@ -25,7 +25,17 @@ body {
     border:  20px solid #5E531E;
     border-radius: 20px;
     padding: 30px;
-    background-color: #e9e9e9;
+
+
+    /* 
+    https://projects.verou.me/css3patterns/#lined-paper
+    by Sarah Backhouse 
+    */
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
 }
 
 
