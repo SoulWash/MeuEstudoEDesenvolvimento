@@ -53,9 +53,12 @@ p, h2 {
 
 .conteiner{
     background-color: var(--color-black);
-    border: 5px solid var(--color-skyBlue);
-    border-radius: 3em;
+    border: 5px solid;
+    border-image-source: linear-gradient(var(--color-skyBlue),var(--color-whiteBlue),var(--color-blue));
+    border-image-slice: 10;
+    border-radius: 20px;
     margin: auto;
+    min-height: 600px;
 }
 
 li {
