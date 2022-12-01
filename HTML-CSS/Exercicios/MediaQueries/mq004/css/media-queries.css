@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* Todas as demais medias */
+
+/* Typical Device Breakpoints
+-----------------------------
+Pequenas Telas: até 600px
+Celular: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+/* Impressão */
+@media print { 
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background: url(../../imagens/back-print.jpg); /*Desnecessário */
+    }
+    main {
+        border: 2px solid black;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    main::after {
+        content: 'Me vê um emprego por gentileza.';
+        text-decoration: underline;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+
+/* Tablet */
+
+@media screen and (min-width:768px) and (max-width:992px){ 
+    body {
+        background: black url(../../imagens/back-tablet.jpg) no-repeat center center/cover;
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+/* Desktop */
+
+@media screen and (min-width:992px) and (max-width:1200px) { 
+    body {
+        background: black url(../../imagens/back-pc.jpg) no-repeat center center/cover;
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+/* Grandes Telas */
+
+@media screen and (min-width:1200px) { 
+    body {
+        background: black url(../../imagens/back-tv.jpg) no-repeat center center/cover;
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
