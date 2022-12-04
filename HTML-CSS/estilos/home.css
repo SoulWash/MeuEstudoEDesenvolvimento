@@ -63,7 +63,7 @@ header h1 {
 
 }
 
-nav {
+menu {
     position: static;
     display: inline-block;
     margin: auto;
@@ -72,11 +72,11 @@ nav {
 }
 
 
-nav ul {
+menu > ul {
     list-style: none;
 }
 
-nav li {
+menu li {
     display: inline-block;
     width: 8.5rem;
     padding: 10px;
@@ -95,7 +95,7 @@ nav li {
     color: rgba(212, 196, 196, 0.514);
 }
 
-nav li:hover {
+menu li:hover {
     text-decoration: none;
     transition: .5s;
     border-top: 5px ridge;
@@ -103,7 +103,7 @@ nav li:hover {
     border-right: 5px ridge;
 }
 
-nav i {
+menu i {
     font-size: 2rem;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.801));
 }
@@ -358,7 +358,7 @@ footer a:hover {
         padding: 40px;
     }
 
-    nav {
+    menu {
         padding-top: 230px;
         display: inline-flex;
     }
