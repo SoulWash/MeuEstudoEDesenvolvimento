@@ -1,11 +1,13 @@
-<h1>#MeuEstudoHTML/CSS &#x1F596 &#x1F913</h1>
+<h1>#MeuEstudoHTML/CSS/JAVASCRIPT &#x1F596 &#x1F913</h1>
 
 
 ## 🛠 Habilidades Utilizadas
 <div style="display: inline_block"><br>
-  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img style="text-align:center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img style="text-align:center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+    <img style="text-align:center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 </div>
+
 <br>
 
  <h2>#PlanoDoMeuEstudo</h2>
@@ -19,13 +21,13 @@ As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada ter
 
 *Irá incluir leitura des documentações que forem necessários para as práticas*
 <p>#Bibliotecas: <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN</a>;<br>
-#Usarei também o Discover da plataforma da RocketSeat, CursoEmVideo com o Professor Guanabara e o site da Dio.me</p>
+#Usarei também o Discover da plataforma da RocketSeat, CursoEmVideo com o Professor Guanabara</p>
 <>
-- HTML/CSS com as práticas (Que vão ficar aqui sendo atualizadas) *É possível que vá estudar em dias separados* 
+- HTML/CSS/JAVASCRIPT com as práticas (Que vão ficar aqui sendo atualizadas) *É possível que vá estudar em dias separados* 
 <p>
 #NÃO SERÁ INCLUIDA NENHUMA DIDATICA POR FORA NESSA DOCUMENTAÇÃO!!
 <pre>EX:.{
-    Videos de outros assuntos que não sejam HTML/CSS;
+    Videos de outros assuntos que não sejam HTML/CSS/JAVASCRIPT;
     EVENTOS, WORKSHOPs, BOOTCAMPs, PODCASTs;
 }
 </pre>
