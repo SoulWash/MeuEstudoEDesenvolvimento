@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+    <style>
+        body {
+            font: 12pt Arial;
+        }
+        button {
+            padding: 30px;
+            font-size: 12pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <button onclick="calcular()">Clique aqui para calacular!</button>
+    <section id="res">
+        <p>Resultado do primeiro exercício...</p>
+    </section>
+
+    <h1>Somando dois números</h1>
+    <button onclick="somar()">Iniciar a Soma</button>
+    <section id="resSoma">
+        <p>Resultado do segundo exercício...</p>
+    </section>
+
+    <h1>Média do Aluno v1.0</h1>
+    <button onclick="media()">Calcular média</button>
+    <section id="resultadoSemestre">
+        <p>Resultado do terceiro exercício...</p>
+    </section>
+
+    <h1>Vários cálculos em JS</h1>
+    <button onclick="calculos()">Clique para calcular</button>
+    <section id="result">
+        <p>Resultado do quarto exercício...</p>
+    </section>
+    <script>
+        window.alert('Seja bem-vindo(a) ao meu site! ');
+
+        function calcular() {
+            let n1 = Number.parseFloat(prompt(`Digite um número: `));
+            let res = document.querySelector('section#res');
+
+            res.innerHTML = `<p>O dobro de ${n1} é ${n1*2} e a metade é ${n1/2}!</p>`;
+        }
+
+        function somar() {
+            let n1 = Number(prompt('Digite um número: '));
+            let n2 = Number(prompt('Digite outro número: '));
+            let soma = n1 + n2
+
+            resSoma.innerHTML = `<p>A soma ente <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${soma}</strong> !</p>`;
+        }
+        
+        function media(){
+            let nome = prompt('Qual o seu nome? ');
+            let n1 = Number(prompt('Digite sua primeira nota: '));
+            let n2 = Number(prompt('Digite sua segunda nota: '));
+            let med = (n1 + n2)/2;
+
+            let resStre = document.getElementById('resultadoSemestre')
+            resStre.innerHTML = `<p>Calculando a média final do aluno(a): <mark>${nome}</mark>.</p>`;
+            resStre.innerHTML += `<p>As notas obtidas foram <mark>${n1}</mark> e <mark>${n2}</mark>.</p>`;
+            resStre.innerHTML += `<p>A média final será <mark>${med}</mark>.</p>`;
+        }
+
+        function calculos(){
+            let num = Number(prompt('Digite um número: '));
+
+            let resultadosCalculos = document.getElementById('result');
+
+            resultadosCalculos.innerHTML = `<p>O número a ser analisado aqui será o <mark>${num}</mark>.</p>`;
+            resultadosCalculos.innerHTML += `<p>O seu valor absoluto é ${Math.abs(num)}.</p>`;
+            resultadosCalculos.innerHTML += `<p>A raiz quadrado do número informado é ${Math.sqrt(num)}.</p>`;
+            resultadosCalculos.innerHTML += `<p>A raiz cúbica do número informado é ${Math.cbrt(num)}.</p>`;
+            resultadosCalculos.innerHTML += `<p>O valor inteiro mais próximo é ${Math.round(num)}.</p>`;
+            resultadosCalculos.innerHTML += `<p>A trunca do valor é ${Math.trunc(num)}.</p>`;
+            resultadosCalculos.innerHTML += `<p>O valor de ${num}<sup>2</sup> é ${Math.pow(num,2)}.</p>`;
+            resultadosCalculos.innerHTML += `<p>O valor de ${num}<sup>3</sup> é ${Math.pow(num,3)}.</p>`;
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+    <style>
+        strong {
+            font: 900 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados v2.0</h1>
+    <button onclick="inicio()">Clique para começar</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+    </section>
+
+    <script>
+        function inicio() {
+            let name = window.prompt('Qual o seu nome? ');
+            let res = window.document.getElementById('resultado');
+            res.innerHTML += `<p>Olá, <strong>${name}</strong>! É um grande prazer te conhecer! &#x1F596;</p>`;
+            res.innerHTML += `<p>Seu nome tem <strong>${name.length}</strong> letras!</p> `;
+            res.innerHTML += `<p>Seu nome com as letras em maiúsculas é <strong>${name.toUpperCase()}</strong>!</p> `;
+            res.innerHTML += `<p>Seu nome com as letras em minúsculas é <strong>${name.toLowerCase()}</strong>!</p> `;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        let n1 = Number.parseFloat(prompt('Digite sua Primeira Nota: '));
+        let n2 = Number.parseFloat(prompt('Digite sua Segunda Nota: '));
+        let s = n1 + n2;
+        let media = s / 2;
+
+        window.alert(`A soma da 1°nota: ${n1.toFixed(1).replace('.', ',')} e da 2°nota: ${n2.toFixed(1).replace('.', ',')} é ${s.toFixed(1).replace('.', ',')}, sua média é ${media.toFixed(1).replace('.', ',')}!`)
+    </script>
+</body>
+</html>

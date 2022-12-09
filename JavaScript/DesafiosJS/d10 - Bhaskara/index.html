@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula de Bhaskara</title>
+    <style>
+        body {
+            font: 900 12pt Arial;
+        }
+        button {
+            padding: 30px;
+            font-size: 12pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resolvendo Bhaskara</h1>
+    <button onclick="calcular()">Calcular</button>
+    <section id="equacao">
+        <p>Considerando uma equação no formato <strong>a</strong>x<sup>2</sup> + <strong>b</strong>x + <strong>c</strong> = 0, aperte o botão acima para calcular o valor de &Delta;</p>
+    </section>
+    <script>
+        function calcular() {
+            let a = Number(prompt('Qual é o valor de a? '));
+            let b = Number(prompt('Qual é o valor de b? '));
+            let c = Number(prompt('Qual é o valor de c? '));
+            const delta = Math.pow(b,2) - 4 * a * c;
+        
+            let result = document.querySelector('section#equacao');
+
+            result.innerHTML = `<h2>Resolvendo Bhaskara</h2>`;
+            result.innerHTML += `<p>A equação atuala é ${a}x<sup>2</sup> + ${b} + ${c} = 0</p>`;
+            result.innerHTML += `<p>O cálculo realizado será &Delta; = ${b}<sup>2</sup> - 4 . ${a} . ${c}</p>`;
+            result.innerHTML += `<p>O valor calculado foi &Delta; = ${delta}</p>`;
+        }
+
+    </script>
+</body>
+</html>

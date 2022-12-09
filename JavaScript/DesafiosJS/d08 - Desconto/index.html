@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Desconto</title>
+    <style>
+        body {
+            font:900 12pt Arial;
+        }
+        button {
+            padding: 30px;
+            font-size: 12pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcular Desconto</h1>
+    <button onclick="clicou()">Desconto de 10%</button>
+    <section id="aplicou">
+        <p>Clique no botão acima para iniciar.</p>
+    </section>
+    <script>
+        function clicou() {
+            let produto = prompt('Qual é o produto que você está comprando? ');
+            let etiqueta = Number(prompt(`Qual o preço do ${produto} ?`));
+            let desconto = (etiqueta*10)/100;
+            let valorFinal = etiqueta - desconto;
+            let add = document.querySelector('section#aplicou');
+
+            add.innerHTML = `<h2>Calculando desconto de 10% para ${produto}</h2>`;
+            add.innerHTML += `<p>O preço original era R$ ${etiqueta.replace('.',',')}.</p>`;
+            add.innerHTML += `<p>Você acaba de ganhar R$ ${desconto.toFixed(2).replace('.',',')} de  desconto(-10%).</p>`;
+            add.innerHTML += `<p>No fim, você vai pagar R$ ${valorFinal.toFixed(2).replace('.',',')}.</p>`;
+        }
+    </script>
+</body>
+</html>
