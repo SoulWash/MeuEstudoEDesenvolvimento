@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+
+h1 {
+    font:normal 2rem 'Pacifico', cursive;
+}
+
+p {
+    font-family: Arial;
+    font-weight: 600;
+}
+
+button {
+    padding: 30px;
+    font-size: 12px;
+}

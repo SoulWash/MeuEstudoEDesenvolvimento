@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font:normal 2rem 'Pacifico', cursive;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font:normal 1em cursive;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Arial';
+    margin: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+p#aprovado {
+    color: rgb(117, 199, 114);
+}
+
+p#recuperacao {
+    color: rgb(255, 187, 0);
+}
+
+p#reprovado {
+    color: red;
+}
+
+button {
+    padding: 30px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: rgb(133, 8, 8);
+    color: white;
+}
+
+button:hover {
+    background: rgb(199, 5, 5);
+}
