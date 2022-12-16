@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando o Dom</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            color: #09fc3d;
+            font: normal 18pt Arial;
+        }
+        button {
+            padding: 30px;
+            font-size: 12pt;
+            font-weight: 900;
+        }
+
+        strong {
+            color: #fc0909;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brincando com o DOM</h1>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <p>Aqui vai o resultado</p>
+    <button onclick="clicou()">
+        Clique aqui!
+    </button>
+    <p id="resposta"></p>
+    <script>
+    const paragrafo = document.getElementsByTagName('p')[1];
+    paragrafo.innerHTML = 'Pagamento da Mercadoria';
+
+    
+    function clicou() {
+        const nome = prompt('Qual o seu nome? ');
+        let produtoN1 = Number(prompt(`${nome}, digite o valor do primeiro produto: `));
+        let produtoN2 = Number(prompt('Digite o valor do segundo produto: '));
+        let somaDosProdutos = produtoN1 + produtoN2;
+
+        let porcentagem = Number(prompt(`Quanto porcento(%) de desconto? `));
+        let desconto = (somaDosProdutos * porcentagem) / 100;
+        let valorFinal = somaDosProdutos - desconto;
+
+        const res = document.querySelector('p#resposta');
+        res.innerHTML = `<p>Cliente <strong>${nome}</strong> a soma dos produtos comprados deu R$${somaDosProdutos.toFixed(2).replace('.',',')} e seu desconto de ${porcentagem}% deu R$${desconto.toFixed(2).replace('.',',')}. Você irá pagar R$${valorFinal.toFixed(2).replace('.',',')}. <strong>Volte Sempre</strong>!</p>`
+
+        res.style.color = 'white'
+    }
+
+    </script>
+</body>
+</html>

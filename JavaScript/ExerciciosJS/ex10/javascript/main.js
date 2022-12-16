@@ -13,6 +13,6 @@ function resultado() {
         res.innerHTML += `<p id="reprovado"><strong>Reprovado(a)</strong>!</p>`;
     }
 
-    res.innerHTML += `<p>Aluno(a): ${name} 1°Nota: ${primeiraNota} / 2°Nota: ${segundaNota} / média final ${mediaAtual}</p>`;
+    res.innerHTML += `<p>Aluno(a): ${name} 1° Nota: ${primeiraNota} / 2° Nota: ${segundaNota} / média final ${mediaAtual}</p>`;
 }
 

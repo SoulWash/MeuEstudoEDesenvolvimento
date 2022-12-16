@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+
+    <style>
+        body {
+            background-color: black;
+            font: normal 20pt Arial;
+        }
+
+        fieldset {
+            margin: 100px auto;
+            width: 550px;
+            border: 2px solid #07f307;
+            color: #fff;
+        }
+
+        input {
+            font-size: 15pt;
+        }
+        strong {
+            color: #f32a07;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Somando Valores</legend>
+        <form action="somando">
+            <input type="number" name="txtn1" id="txtn1"> + 
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="Somar" onclick="somar()">
+        </form>
+        <div id="resultado">
+            <p>O resultado vai aqui...</p>
+        </div>
+    </fieldset>
+
+    <script>
+        function somar(){
+            const Number01 = Number(document.querySelector('#txtn1').value);
+            const Number02 = Number(document.querySelector('#txtn2').value);
+
+            const soma = Number01 + Number02;
+            const res = document.querySelector('#resultado');
+            res.innerHTML = `<p>O resultado da soma foi <strong>${soma}</strong>.</p>`;
+        }
+    </script>
+</body>
+</html>

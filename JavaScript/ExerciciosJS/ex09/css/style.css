@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font: normal 20pt Arial;
+}
+
+section {
+    background-color: #c9c5c5;
+    margin: 120px auto;
+    padding: 20px;
+    max-width: 500px;
+    height: 250px;
+    border-radius: 20px;
+}
+form {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    color: rgb(0, 81, 255);
+}
+
+input#button {
+    padding: 10px;
+    margin-left: -8px;
+    color: black;
+}
+
+strong#ok {
+    color: #52ff2f;
+}
+
+strong#multado {
+    color: red;
+}

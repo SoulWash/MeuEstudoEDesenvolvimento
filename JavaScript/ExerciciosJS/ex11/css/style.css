@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #228ec0;
+    font: normal 20pt 'Arial';
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1 {
+    font-variant: small-caps;
+    
+}
+
+fieldset {
+    max-width: 800px;
+    height: 200px;
+    margin: 20px auto;
+    border: 5px ridge #2ba72b;
+}
+
+input {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+p {
+    margin-top: 30px;
+}
+
+strong {
+    color: yellow;
+}
