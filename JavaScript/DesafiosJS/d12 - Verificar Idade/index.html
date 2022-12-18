@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificar a Idade</h1>
+    </header>
+    <section>
+        <form>
+            <label>Ano do nascimento: </label><input type="number" name="ano" id="ano" min="0"><br>
+            <label>Sexo: </label>
+            <input type="radio" name="sex" id="masc"><label for="masc"> Masculino</label>
+            <input type="radio" name="sex" id="fem"><label for="fem"> Feminino</label><br>
+            <input type="button" value="Verificar" onclick="verificar()" id="button">
+        </form>
+        <div id="idade-res"><p><h4>Clique em verificar</h4></p></div>
+        <div id="idade-img"><img src="./assets/imagem/inicio.jpg" alt="Paisagem de uma Cidade"></div>
+    </section>
+    <footer><a href="https://www.youtube.com/watch?v=b2K7eo5Jdj8&list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm&index=26&ab_channel=CursoemV%C3%ADdeo" target="_blank" rel="external">&copy; CursoemVideo</a></footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

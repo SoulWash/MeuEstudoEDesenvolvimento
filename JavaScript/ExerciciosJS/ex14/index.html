@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculando</title>
+</head>
+<body onload="sorteado()">
+    <div>
+        <h1>Calculando sua idade</h1>
+        <button onclick="iniciar()">Iniciar</button>
+        <section id="result">
+            <p>Aqui vai aparecer algo...</p>
+        </section>
+    </div>
+    
+    <div>
+        <h1>Múltiplas ações</h1>
+        <button onclick="clicou()">Iniciar</button>
+        <section id="res">
+            <p>Clique no botão acima para começar.</p>
+        </section>
+    </div>
+
+    <div>
+        <h1>Gerador de números</h1>
+        <button onclick="sortear()">Iniciar</button>
+        <button onclick="limpar()">Limpar</button>
+        <section id="pensei">
+            <p>Cada vez que você apertar o botão acima, eu penso em um número entre 1 e 100.</p>
+        </section>
+    </div>
+
+    <div>
+        <h1>Tente adivinhar meu número</h1>
+        <button onclick="comecar()" id="btn">Tente adivinhar</button>
+        <section id="adivinhar">
+            <p>Já pensei em um valor entre 1 e 100....</p>
+        </section>
+    </div>
+    
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

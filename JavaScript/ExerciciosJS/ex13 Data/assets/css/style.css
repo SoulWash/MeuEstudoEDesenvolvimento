@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #1dd61d;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+    font:normal 2rem 'Pacifico', cursive;
+}
+
+button {
+    padding: 30px;
+    font-size: 20pt;
+    border-radius: 10px;
+    opacity: .8;
+}
+button:hover {
+    opacity: 1;
+}
+
+p {
+    margin-top: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+
+mark {
+    padding: 3px;
+}
+
+div {
+    border-bottom: 2px solid red;
+}
