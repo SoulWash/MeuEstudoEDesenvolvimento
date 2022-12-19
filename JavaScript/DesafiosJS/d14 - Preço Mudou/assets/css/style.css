@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: normal 2rem Arial;
+}
+
+button {
+    padding: 30px;
+    font-size: 1rem;
+}

@@ -7,6 +7,7 @@ function dataAgora() {
     res.innerHTML = `<p>O que recebi do sistema foi <mark>${now}</mark></p>`
 }
 
+/* Analisando data e hora do sistema */
 
 function analisar() {
     let monthYear = new Array('Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro');
@@ -31,6 +32,8 @@ function analisar() {
     res.innerHTML += `<p>Minutos: <mark>${min}</mark></p>`;
     res.innerHTML += `<p>Segundos: <mark>${sec}</mark></p>`;
 }
+
+/* Estações do ano */
 
 function clicou() {
     let month = prompt('Digite o mês em extenso (ex: Setembro)');

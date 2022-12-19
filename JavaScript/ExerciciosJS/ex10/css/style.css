@@ -1,52 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@charset "UTF-8";
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font:normal 2rem 'Pacifico', cursive;
+    background-color: #228ec0;
+    font: normal 20pt 'Arial';
+    color: #fff;
     text-align: center;
-    background-color: aliceblue;
+    padding-top: 50px;
 }
 
 h1 {
     font-variant: small-caps;
-    letter-spacing: 4px;
+    
 }
 
-h2 {
-    font:normal 1em cursive;
-    margin-bottom: 20px;
+fieldset {
+    max-width: 800px;
+    height: 200px;
+    margin: 20px auto;
+    border: 5px ridge #2ba72b;
+}
+
+input {
+    margin-top: 10px;
+    padding: 10px;
 }
 
 p {
-    font-family: 'Arial';
-    margin: 2rem;
-    color: rgb(0, 0, 0);
+    margin-top: 30px;
 }
 
-p#aprovado {
-    color: rgb(117, 199, 114);
-}
-
-p#recuperacao {
-    color: rgb(255, 187, 0);
-}
-
-p#reprovado {
-    color: red;
-}
-
-button {
-    padding: 30px;
-    font-size: 1rem;
-    border-radius: 10px;
-    background: rgb(133, 8, 8);
-    color: white;
-}
-
-button:hover {
-    background: rgb(199, 5, 5);
+strong {
+    color: yellow;
 }
