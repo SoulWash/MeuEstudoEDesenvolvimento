@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem inteligente</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header><h1>Contando "inteligente"</h1></header>
+    <section>
+        <p>Use qualquer valor nas caixas, simule contagens crescentes e regressivas. Use também valores negativos.</p>
+        <form>
+            <label for="cNP1">Valor final: </label><input type="number" name="cNP" id="cNP1" placeholder="Início da contagem"><br>
+            <label for="cNP2">Valor final: </label><input type="number" name="cNP" id="cNP2" placeholder="Fim da contagem"><br>
+            <button type="button" onclick="contar()" id="cNP">Contar</button>
+        </form>
+        <div id="res">
+            <p>Preencha os dados acima e aperte o botão.</p>
+        </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

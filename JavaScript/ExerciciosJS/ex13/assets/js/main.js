@@ -78,6 +78,6 @@ function comecar(){
         adivinhar.innerHTML += `<p><strong>PARABÉNS</strong>! Você acertou! Eu tinha sorteado o valor <mark>${pc}</mark>!</p>`;
         document.querySelector('button#btn').style.visibility = 'hidden';
     } else {
-        adivinhar.innerHTML += `<p><strong>[ERRo]</strong> Digite novamente!</p>`;
+        adivinhar.innerHTML += `<p><strong>[ERRO]</strong> Digite novamente!</p>`;
     }
 }
