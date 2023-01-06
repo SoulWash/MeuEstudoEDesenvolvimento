@@ -7,13 +7,35 @@
     <title>JS</title>
 </head>
 <body>
-    <script>
-        let n1 = Number.parseFloat(prompt('Digite sua Primeira Nota: '));
-        let n2 = Number.parseFloat(prompt('Digite sua Segunda Nota: '));
-        let s = n1 + n2;
-        let media = s / 2;
+    <header><h1>Verificando sua média</h1></header>
+    <section>
+        <div>
+            <input type="number" name="n1" id="n1" placeholder="Digite um número"><br>
+            <input type="number" name="n2" id="n2" placeholder="Digite um número"><br>
+            <input type="submit" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="res">
 
-        window.alert(`A soma da 1°nota: ${n1.toFixed(1).replace('.', ',')} e da 2°nota: ${n2.toFixed(1).replace('.', ',')} é ${s.toFixed(1).replace('.', ',')}, sua média é ${media.toFixed(1).replace('.', ',')}!`)
+        </div>
+    </section>
+    <script>
+        let n1 = document.querySelector('input#n1');
+        let n2 = document.querySelector('input#n2');
+        let res = document.querySelector('#res');
+
+        function somar(a, b){
+            return Number(a) + Number(b);
+        }
+
+        function media(s){
+            return Number(s)/2
+        }
+
+        function verificar(){
+            let soma = somar(n1.value, n2.value);
+            let Media = media(soma);
+            res.innerHTML = `A soma da 1°nota: ${n1.value} e da 2°nota: ${n2.value} é ${soma}, sua média é ${Media}!`
+        }
     </script>
 </body>
 </html>

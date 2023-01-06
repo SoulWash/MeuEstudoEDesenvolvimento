@@ -1,11 +1,25 @@
+let veloc = document.querySelector('#velocidade');
+let res = document.querySelector('#res');
+
+
+
+
+function permitida(v){
+    if (Number(v) <= 80){
+        return `<strong id="ok">Pode passar!</strong>`
+    } else {
+        return `<strong id="multado">Você foi multado!</strong> Diminua sua velociadade`;
+    }
+}
+
 
 function clicou() {
-    let veloc = Number(document.querySelector('#velocidade').value);
-    let vel = document.querySelector('#vel');
-    vel.innerHTML = `<p>Sua velociade é de ${veloc}Km/h.</p>`
-        if (veloc <= 80) {
-            vel.innerHTML += `<p><strong id="ok">Pede passar!</strong></p>`
-        } else {
-            vel.innerHTML += `<p><strong id="multado">Você foi multado!</strong> Diminua sua velociadade.</p>`
-        }
+
+    let velocidade = permitida(veloc.value);
+    res.innerHTML += `<p>Sua velociade é de ${veloc.value}Km/h.</p>`
+    res.innerHTML += `<p>${velocidade}</p>`;
+    veloc.value = '';
+    veloc.focus();
 }
+
+
