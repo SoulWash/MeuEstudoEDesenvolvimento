@@ -4,13 +4,22 @@ let linguagem = document.querySelector('#linguagem')
 
 
 function lgJs(lg){
-    if(lg === 'JS' || lg === 'JavaScript' || lg === 'js'){
+    if(lg === 'JS' || lg === 'JAVASCRIPT'){
         return true
     } else {
         return false
     }
 }
 
+let NaoELgP = (lg) => {
+    if(lg === 'HTML' || lg === 'CSS'){
+        return true
+    } else {
+        return false
+    }
+}
+
+/*
 function htmlNope(lg){
     if(lg === 'HTML' || lg === 'Html' || lg === 'html'){
         return true
@@ -26,14 +35,15 @@ function cssNope(lg){
         return false
     } 
 }
+*/
 
 function clicou(){
     res.innerHTML = `<h4>Bem vindo(a) <strong>${name.value}</strong>!</h4>`
 
-    if(lgJs(linguagem.value) && !htmlNope(linguagem.value)){
+    if(lgJs(linguagem.value.toUpperCase()) && !NaoELgP(linguagem.value.toUpperCase())){
         res.innerHTML += `<p>Estou aprendendo essa linguagem.</p>`
-    } else if (htmlNope(linguagem.value) || cssNope(linguagem.value)) {
-        res.innerHTML += `<p>${linguagem.value} não é uma linguagem de programação!</p>`
+    } else if (NaoELgP(linguagem.value.toUpperCase())) {
+        res.innerHTML += `<p>${linguagem.value.toUpperCase()} não é uma linguagem de programação!</p>`
     } else {
         res.innerHTML += `<p>Ainda não estudei sobre essa linguagem.</p>`
     }
