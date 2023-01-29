@@ -6,7 +6,8 @@ class Polygon {
     }
 
     get area(){
-        return this.#calculeteArea()  // Quando possui uma '#' é que só vai ser assessivel dentro da class
+        return this.#calculeteArea()  
+// Quando possui uma '#' é que só vai ser assessivel dentro da class
     }
 
     #calculeteArea(){

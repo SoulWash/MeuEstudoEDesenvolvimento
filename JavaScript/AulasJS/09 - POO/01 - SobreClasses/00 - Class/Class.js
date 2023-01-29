@@ -1,4 +1,10 @@
 // POO CLASS
+//São templates para criação de objetos. 
+//Contem atributos e métodos:
+//Atributos são as características da classe
+//Métodos são as funções da classe
+
+
 
 // class Carro{
 //     //cor= "vermelho"
@@ -13,20 +19,4 @@
 // let c2 = new Carro('red')
 // let c3 = new Carro('green')
 
-// Herança : Pai e filho
 
-//Class Pai
-class Veiculo {
-    rodas = 4
-
-    mover(direcao){}
-    virar(direcao){}
-}
-
-// Class Filho
-class Moto extends Veiculo {  // a classe Moto 'HERDA' de Veivulo
-    constructor() {
-        super() // puxar atributos e métodos do pai
-        this.rodas = 2
-    }
-}

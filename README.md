@@ -15,20 +15,19 @@
 As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada termino do meu desenvolvimento.<br>
 - Com adesão de pastas e arquivos separados, para ter sua diferenciação na documentação.<br>
 
-- O intuito é não pular nenhuma etapa mesmo que já tenha sido vista em outros curso ou documentações.</p>
+- O intuito é não pular nenhuma etapa mesmo que já tenha sido vista em outros cursos ou documentações.</p>
 
 <h2>#Condições:</h2>
 
 *Irá incluir leitura des documentações que forem necessários para as práticas*
 <p>#Bibliotecas: <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN</a>;<br>
-#Usarei também o Discover da plataforma da RocketSeat, CursoEmVideo com o Professor Guanabara</p>
+#Usarei também o Discover da plataforma da RocketSeat, CursoEmVideo com o Professor Guanabara, Udemy: Vitor Ceron - Como trabalhar com classes no Javascript</p>
 <>
 - HTML/CSS/JAVASCRIPT com as práticas (Que vão ficar aqui sendo atualizadas) *É possível que vá estudar em dias separados* 
 <p>
-#NÃO SERÁ INCLUIDA NENHUMA DIDATICA POR FORA NESSA DOCUMENTAÇÃO!!
+#NÃO SERÁ INCLUIDA NENHUMA DIDÁTICA POR FORA NESSA DOCUMENTAÇÃO!!
 <pre>EX:.{
     Videos de outros assuntos que não sejam HTML/CSS/JAVASCRIPT;
-    EVENTOS, WORKSHOPs, BOOTCAMPs, PODCASTs;
 }
 </pre>
 </p>

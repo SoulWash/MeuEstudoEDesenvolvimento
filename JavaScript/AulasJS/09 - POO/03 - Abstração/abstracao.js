@@ -25,7 +25,13 @@ class Philips extends Parafuso {
     }
 }
 
-class Allen extends Parafuso {} // se não for adicionado os métodos, não vai funcionar
+class Allen extends Parafuso {
+    //constructor(){super()}
+
+    //get tipo(){
+    //    return 'allen'
+    //}
+ } // se não for adicionado os métodos, não vai funcionar
 
 
 let fenda = new Fenda()
