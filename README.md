@@ -21,7 +21,7 @@ As fases irá começar com o básico de PRÁTICAS, e será atualizado a cada ter
 
 *Irá incluir leitura des documentações que forem necessários para as práticas*
 <p>#Bibliotecas: <a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN</a>;<br>
-#Usarei também o Discover da plataforma da RocketSeat, CursoEmVideo com o Professor Guanabara, Udemy: Vitor Ceron - Como trabalhar com classes no Javascript</p>
+#Usarei também o Discover da plataforma da RocketSeat, CursoEmVideo com o Professor Guanabara, Udemy: Vitor Ceron - Como trabalhar com classes no Javascript, CFB Cursos: Bruno P. Campos  - JavaScript POO</p>
 <>
 - HTML/CSS/JAVASCRIPT com as práticas (Que vão ficar aqui sendo atualizadas) *É possível que vá estudar em dias separados* 
 <p>

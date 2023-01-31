@@ -62,9 +62,33 @@ class ContaPoupanca extends Conta {
     }
 }
 
+class ContaCorrente extends Conta {
+
+    saqueCorrente(valor){
+
+        if(valor > this.saldo){
+            throw new Error('Saldo insuficiente');
+        }
+
+        this.saldo = this.saldo - valor;
+        this.registrarNoExtrato(`${Utils.getFormatDate()} - Saque de: ${valor} - Saldo de ${this.saldo}`)
+    }
+
+    depositoCorrente(valor){
+        this.saldo = this.saldo + valor;
+        this.registrarNoExtrato(`${Utils.getFormatDate()} - Depósito de: ${valor} - Saldo de ${this.saldo}`)
+    }
+
+}
+
 let novaContaPoupanca = new ContaPoupanca("Washington", '12546', 1000)
 novaContaPoupanca.saque(100)
 novaContaPoupanca.deposito(500)
 novaContaPoupanca.saque(300)
 
 novaContaPoupanca.exibirExtrato
+
+let contaCorrente = new ContaCorrente("Jose", '21654', 1000)
+contaCorrente.saqueCorrente(200)
+contaCorrente.depositoCorrente(600)
+contaCorrente.exibirExtrato
