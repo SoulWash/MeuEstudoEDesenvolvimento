@@ -16,3 +16,4 @@ for (let property in person) {
     //console.log(person.name)
     console.log(person[property])
 }
+
