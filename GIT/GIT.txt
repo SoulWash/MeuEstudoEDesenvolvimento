@@ -10,3 +10,40 @@ novamente à linha principal, sem falar na possibilidade de poder trabalhar com 
 resolvendo conflitos, porém nesse curso não falaremos sobre essas ramificações, teremos mais foco em nossos próprios projetos,
 as ramificações ficarão para outro curso.
 
+Acessando "https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git",
+Podemos vê sobre as configurações iniciais do git como username e e-mail, sempre colocar o mesmo e-mail do GitHub para não ocorre problema quando for subir o projeto.
+
+
+Utiliando o git help <comandoEscolhido> poderá ver o manual daquele comoando.
+Ex.: git help log;
+
+
+Comando ls -a : vai mostrar onde se localiza aquele diretório;
+E usando a tecla tab duas vezes mostra a lista de arquivos daquele diretório.
+
+ls -al : Motra a linha do tempo dos arquivos e quem fez as ultimas alterações.
+
+COMMIT:
+
+git add .  : Qual arquivo vai ser inserido no git
+git commit -m 'First Commit'  : Adicionando no git
+
+
+GIT LOG:
+
+git log :: Mostra toda linha do tempo com o nome e email do autor dos commits; 
+Press "q" sai da lista;
+git log --oneline :: mostra de forma curta os commits;
+git log --since=ano-mes-dia :: Mostra os commits da data escolhida idiante;
+git log --until=ano-mes-dia :: Mostra os commits anteriores a data escolhida;
+git log --author=NomeDoAutor :: Commits que o autor escolhida fez;
+git log --grep="mensagemDoCommit" :: Procura os commits utilinzado expressão regulares.
+
+
+
+Hash values(SHA-1):
+
+° Quando faz um commit ele é convertido no em números sha-1;
+° São 40 caracteres de 0-9 e de a-f.
+
+
