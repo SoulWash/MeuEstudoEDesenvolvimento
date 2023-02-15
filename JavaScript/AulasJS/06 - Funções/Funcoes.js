@@ -34,3 +34,18 @@ function nota(n1=valorPadrão,n2=valorPadrão){
 }
 let somaN = nota(12,89)
 console.log(somaN)
+
+
+
+// Função Construtor anônima
+const linguagem= new Function("ttl1","ttl2","return ttl1+ttl2")
+
+console.log(linguagem("Java", "Script"))
+
+
+//Arrow function
+// Se possuir apenas um valor não precisa colocar (parenteses);
+//Não precisa utilizar sempre o 'return' e as {chaves};
+const add=n=>n+10
+console.log(add(10))
+

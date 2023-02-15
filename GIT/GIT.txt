@@ -26,6 +26,7 @@ ls -al : Motra a linha do tempo dos arquivos e quem fez as ultimas alterações.
 COMMIT:
 
 git add .  : Qual arquivo vai ser inserido no git
+git add *.txt : Adicionar todos os arquivos com a mesma extensão 
 git commit -m 'First Commit'  : Adicionando no git
 
 
@@ -46,4 +47,8 @@ Hash values(SHA-1):
 ° Quando faz um commit ele é convertido no em números sha-1;
 ° São 40 caracteres de 0-9 e de a-f.
 
+Removendo um arquivo do Stage-Area:
+git rm --chached nomeArquivo.txt
 
+git diff :: Verifica as alterações que foram feitas no documento salvo no diretorio.
+git diff --staged :: Verifica os arquivos que estão no Stage Area
