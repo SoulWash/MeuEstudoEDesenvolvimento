@@ -7,7 +7,7 @@ class Nota {
     }
 
     media(){
-        return this.nota1 + this.nota2 / 2
+        return (this.nota1 + this.nota2) / 2
     }
 
     resultAluno(){

@@ -52,3 +52,54 @@ git rm --chached nomeArquivo.txt
 
 git diff :: Verifica as alterações que foram feitas no documento salvo no diretorio.
 git diff --staged :: Verifica os arquivos que estão no Stage Area
+
+
+git restore --staged nomeDoArquivo :: Remove o arquivo do Stage Area 
+
+git commit -m "delete nome do arquivo" ::
+Deleta o arquivo que está no stage area manualmente
+
+git rm nomeArquivo :: Romove o arquivo e ele volta para o stage Area
+git commit -m "remove nomeDoArquivo":: Remove do stage area
+
+
+Renomar o arquivo:
+Deppois de renomar o arquivo tem que ser passado:
+git rm <nomeDoArquivo> depois o git add <nomeDoNovoArquivo>
+
+outra forma:
+git mv <nomeDoArquivo> <nomeDoNovoArquivo>
+
+Adicionar em outra pasta:
+git mv <nomeDoArquivo> NomeDaPasta/<nomeDoNovoArquivo>
+
+
+Restaurar alterações:
+git restore <nomeDoArquivo>
+
+Desfazer alterações Stage Area:
+git restore --staged <nomeDoArquivo> :: Modo atual
+git reset HEAD <nomeDoArquivo> :: Modo antigo
+
+Corrigir o último commit::
+git commit --amend :: Mantendo a mesma mensagem após a alteração
+git commit --amend -m "Mensagem" :: Corrigindo a mensagem
+
+Recuperando Arquivos:
+git checkout <nomeDoCommit> -- <nomeDoArquivo>
+
+
+Removendo arquivos não rastreados:
+git clean -n :: Remove difinitivo, não terá como recuperar!
+git clean -f :: Vai forçar a remoção
+
+
+Reverter multiplos arquivos: Diretório precisa está clean(limpo) 
+° Vai pegar o arquivo na historia contando de cima para baixo ~<numb>;
+° Ou pelo número Hash do commit comandoEscolhido.
+
+git revert HEAD~<númeroDeCimaParaBaixo>
+git revert <NúmeroHash>
+
+
+

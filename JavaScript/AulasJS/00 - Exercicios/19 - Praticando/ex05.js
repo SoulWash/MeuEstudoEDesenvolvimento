@@ -1,24 +1,21 @@
 //  Somando os números depois dividindo pelo mesmo
 
-// class Media{
-//     constructor(num){
-//         this.num = num
-//         this.soma=0
-//     }
+class Media{
+    constructor(num){
+        this.num = num
+        this.soma=0
+    }
 
-//     media(){
-//         for(let cont=1; cont <=this.num; cont+=2){
-//             this.soma+=cont
-//         }
-//         return media = this.soma/this.num
-//     }
-// }
+    media(){
+        for(let cont=1; cont <=this.num; cont+=2){
+            this.soma+=cont
+        }
+        return media = this.soma/this.num
+    }
+}
 
-// let media = new Media(500)
-// console.log("Média:", media.media())
-
-
-
+let media = new Media(500)
+console.log("Média:", media.media())
 
 
 //Somando números pares; 

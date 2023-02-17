@@ -49,3 +49,14 @@ console.log(linguagem("Java", "Script"))
 const add=n=>n+10
 console.log(add(10))
 
+//Função dentro de outra função
+const soma=(...valores)=>{
+    const somar=val=>{
+        let res=0
+        for(v of val)
+            res+=v
+            return res
+    }
+    return somar(valores)
+}
+console.log(soma(12,15,6))
